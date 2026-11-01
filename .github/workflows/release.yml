@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - 'v*'
@@ -18,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y gnome-shell libglib2.0-bin-dev
+          sudo apt-get install -y gnome-shell libglib2.0-bin
 
       - name: Build extension pack
         run: make pack
