@@ -1,0 +1,16 @@
+{
+  "name": "Drawing Mode Toggle",
+  "description": "Native Quick Settings toggle and top panel indicator to switch between transparent and standard cursor for drawing and note-taking.",
+  "uuid": "drawing-mode-toggle@fyychs.github.com",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/fyychs/GNOME-Drawing-Mode-Toggle",
+  "settings-schema": "org.gnome.shell.extensions.drawing-mode-toggle",
+  "version": 1
+}

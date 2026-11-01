@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y gnome-shell libglib2.0-bin-dev
+
+      - name: Build extension pack
+        run: make pack
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.shell-extension.zip"
+          generate_release_notes: true

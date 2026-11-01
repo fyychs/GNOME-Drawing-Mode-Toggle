@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="drawing-mode-toggle">
+  <schema id="org.gnome.shell.extensions.drawing-mode-toggle" path="/org/gnome/shell/extensions/drawing-mode-toggle/">
+    <key name="toggle-shortcut" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;d']</default>
+      <summary>Toggle Drawing Mode Shortcut</summary>
+      <description>Global keyboard shortcut to toggle transparent cursor drawing mode.</description>
+    </key>
+    <key name="previous-cursor-theme" type="s">
+      <default>'Adwaita'</default>
+      <summary>Previous cursor theme</summary>
+      <description>Cursor theme to restore when drawing mode is turned off.</description>
+    </key>
+    <key name="show-indicator" type="b">
+      <default>true</default>
+      <summary>Show indicator in top panel</summary>
+      <description>Whether to show a status indicator in the top panel when drawing mode is active.</description>
+    </key>
+  </schema>
+</schemalist>
