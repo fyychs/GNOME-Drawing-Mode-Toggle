@@ -4,7 +4,7 @@ A GNOME Shell extension that adds a **Drawing Mode** toggle to the Quick Setting
 
 I built this for use with a browser-based drawing app. In browsers and therefore also electron-based apps, using a stylus causes the standard system cursor to appear on touch. This is annoying, so I wanted a solution until the upstream bug ([Chromium Issue #40236040](https://issues.chromium.org/issues/40236040) / [Electron #39438](https://github.com/electron/electron/issues/39438)) is fixed. 
 
-![GNOME 45+](https://img.shields.io/badge/GNOME-45%20--%2050-blue)
+![GNOME 45+](https://img.shields.io/badge/GNOME-45%20--%2051-blue)
 ![Wayland](https://img.shields.io/badge/Compositor-Wayland%20%7C%20X11-success)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
